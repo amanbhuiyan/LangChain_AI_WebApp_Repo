@@ -6,6 +6,7 @@ from langchain_openai import OpenAI
 from langchain.chains import LLMChain
 import prompts
 from prompts import ice_cream_assistant_prompt_template
+import streamlit as st
 
 from dotenv import load_dotenv
 
@@ -19,23 +20,22 @@ llm_chain = LLMChain(llm=llm, prompt=ice_cream_assistant_prompt_template)
 
 
 def query_llm(question):
-    print(llm_chain.invoke({'question': question})['text'])
-    # print(chain.invoke({'question': question})['text'])
+    outputResut = llm_chain.invoke({'question': question})['text']
+    print(type(outputResut))
+    return outputResut
 
 
-'''
-if __name__ == '__main__':
-    query_llm("Who are you?")
 
-    '''
 
 
 if __name__ == '__main__':
-    # question = "Who are you?"
-    # question = "What is 2+2 ?"
+    
+    st.title("Hi ! This is the home page of our chatbot")
     print("___________________________________________")
-    question= input("What you want to know ?\n")
+  
+    question= st.text_input("What is your question ?")
     print('\n')
-    # question = "Ok please tell me what i need to make a vanila flavoured ice cream- thanks"
-    query_llm(question)
-    #print(prompts.testfunc())
+   
+
+    st.write(query_llm(question))
+    
