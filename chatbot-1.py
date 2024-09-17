@@ -32,7 +32,10 @@ if __name__ == '__main__':
 
 if __name__ == '__main__':
     # question = "Who are you?"
-    question = "What is 2+2 ?"
+    # question = "What is 2+2 ?"
+    print("___________________________________________")
+    question= input("What you want to know ?\n")
+    print('\n')
     # question = "Ok please tell me what i need to make a vanila flavoured ice cream- thanks"
     query_llm(question)
     #print(prompts.testfunc())
