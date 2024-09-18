@@ -29,13 +29,22 @@ def query_llm(question):
 
 
 if __name__ == '__main__':
+
+    question= ""
+
     
+    st.write("")
     st.title("Hi ! This is the home page of our chatbot")
     print("___________________________________________")
   
     question= st.text_input("What is your question ?")
     print('\n')
+    if question=="":
+        st.write("")
+    elif question!="":
+        st.write(query_llm(question))
+
    
 
-    st.write(query_llm(question))
+    
     
