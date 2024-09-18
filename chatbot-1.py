@@ -34,10 +34,10 @@ if __name__ == '__main__':
 
     
     st.write("")
-    st.title("Hi ! This is the home page of our chatbot")
+    st.title("This is your organisation's chatbot")
     print("___________________________________________")
   
-    question= st.text_input("What is your question ?")
+    question= st.text_input("What is your question, related to  Ice-cream ?")
     print('\n')
     if question=="":
         st.write("")
