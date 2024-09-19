@@ -29,7 +29,7 @@ def query_llm(question):
 
 
 if __name__ == '__main__':
-<<<<<<< HEAD
+
 
     question= ""
 
@@ -46,16 +46,3 @@ if __name__ == '__main__':
         st.write(query_llm(question))
 
    
-
-    
-    
-=======
-    # question = "Who are you?"
-    # question = "What is 2+2 ?"
-    print("___________________________________________")
-    question= input("What you want to know ?\n")
-    print('\n')
-    # question = "Ok please tell me what i need to make a vanila flavoured ice cream- thanks"
-    query_llm(question)
-    #print(prompts.testfunc())
->>>>>>> 424a6e7 (prompt to take input from user and some minor changes)
