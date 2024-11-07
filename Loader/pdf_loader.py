@@ -10,6 +10,7 @@ loader= PyPDFLoader("C:/Everything/Projects/Python Projects/LagnChain_AI_Web_App
 docs= loader.load()
 
 
+
 for doc in docs:
     print(doc.metadata)
     print(doc.page_content)

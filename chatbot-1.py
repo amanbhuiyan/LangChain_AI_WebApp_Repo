@@ -35,7 +35,8 @@ if __name__ == '__main__':
 
     
     st.write("")
-    st.title("This is your organisation's chatbot")
+    st.title("This is your Ice cream comapny's chatbot")
+    st.header("It can answer any questions related to icecream ")
     print("___________________________________________")
   
     question= st.text_input("What is your question, related to  Ice-cream ?")
